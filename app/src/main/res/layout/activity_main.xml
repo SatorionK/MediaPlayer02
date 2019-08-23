@@ -63,7 +63,72 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="0.65">
+        android:layout_weight="0.65"
+        android:background="@color/colorBlack"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            >
+
+            <ImageButton
+                android:id="@+id/button_repeat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:srcCompat="@drawable/repeat2_w" />
+            <ImageButton
+                android:id="@+id/button_back"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:srcCompat="@drawable/back" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/button_play"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fabSize="auto"
+                app:fabCustomSize="100dp"
+                app:maxImageSize="40dp"
+                app:srcCompat="@drawable/pouse2_b"/>
+
+            <ImageButton
+                android:id="@+id/button_prev"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:srcCompat="@drawable/prev_w" />
+
+            <ImageButton
+                android:id="@+id/button_shuff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:layout_margin="15dp"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:srcCompat="@drawable/shuful" />
+
+
+
+
+        </LinearLayout>
+
+
+
 
     </LinearLayout>
 
