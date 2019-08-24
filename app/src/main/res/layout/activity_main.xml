@@ -45,16 +45,32 @@
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
                 android:orientation="vertical"
-                android:background="@color/colorBlack">
+                android:background="@color/colorBlack_half">
+
+                <TextView
+                    android:id="@+id/textView_artistname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+
+                    android:textSize="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#ffffff"
+                    android:text="Artist_name" />
+                <TextView
+                    android:id="@+id/textView_musicname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+
+                    android:textSize="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#ffffff"
+                    android:text="music_name" />
 
 
 
             </LinearLayout>
 
         </LinearLayout>
-
-
-
 
     </RelativeLayout>
 
@@ -64,9 +80,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="0.65"
+        android:orientation="vertical"
         android:background="@color/colorBlack"
         >
-
+        <!--　曲のコントロールの構成 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="100dp"
@@ -121,12 +138,51 @@
                 android:layout_weight="1"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 app:srcCompat="@drawable/shuful" />
+        </LinearLayout>
 
+        <!--　シークバーの構成 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="15dp"
+                android:maxHeight="20dp"
+                android:thumb="@drawable/custom_thumb"
+                android:progressDrawable="@drawable/custom_progress"
+                />
 
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/textView_position"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:textSize="30dp"
+                    android:textColor="#ffffff"
+                    android:text="0:00" />
+
+                <TextView
+                    android:id="@+id/textView_duration"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:textSize="30dp"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="right"
+                    android:text="0:00" />
+            </FrameLayout>
 
 
         </LinearLayout>
-
 
 
 
