@@ -120,7 +120,7 @@
                 app:srcCompat="@drawable/pouse2_b"/>
 
             <ImageButton
-                android:id="@+id/button_prev"
+                android:id="@+id/button_next"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="fitCenter"
@@ -180,12 +180,7 @@
                     android:layout_gravity="right"
                     android:text="0:00" />
             </FrameLayout>
-
-
         </LinearLayout>
-
-
-
     </LinearLayout>
 
 </LinearLayout>
