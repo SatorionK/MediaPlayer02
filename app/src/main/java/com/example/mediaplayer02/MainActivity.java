@@ -1,5 +1,6 @@
 package com.example.mediaplayer02;
 
+import android.content.ComponentName;
 import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.media.MediaBrowserCompat;
@@ -88,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
         startService(intent);
 
         //browserのインスタンス化
-        mBrowser = new MediaBrowserCompat(this, new ConpornetName(this, MusicService.class), connectionCallback, null);
+        mBrowser = new MediaBrowserCompat(this, new ComponentName(this, MusicService.class), connectionCallback, null);
         mBrowser.connect();
 
     }
